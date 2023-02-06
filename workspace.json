@@ -1,0 +1,257 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-02-06T00:01:34.978Z",
+    "__export_source": "insomnia.desktop.app:v2022.7.1",
+    "resources": [
+        {
+            "_id": "req_b790c6ac17904105a88742fbc970f559",
+            "parentId": "fld_4a42637754df4b4f90f526b88cc93fa6",
+            "modified": 1675640467779,
+            "created": 1675621500756,
+            "url": "{{ _.base }}/client/contacts",
+            "name": "list contacts",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6ImM4MWU1MDI0LTQxNjYtNGQ2Mi05MjRhLThhN2M1NDQzOTAwYiIsImlhdCI6MTY3NTYzNzkyOSwiZXhwIjoxNjc1NzI0MzI5LCJzdWIiOiJjODFlNTAyNC00MTY2LTRkNjItOTI0YS04YTdjNTQ0MzkwMGIifQ.fXR1gXQDrY0aZT3B0KMRKi_sqH5mQrahScUvKuTMMVo"
+            },
+            "metaSortKey": -1675621500756,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_4a42637754df4b4f90f526b88cc93fa6",
+            "parentId": "wrk_5de58a2fba3945beade04ee26f5d0f22",
+            "modified": 1675621263117,
+            "created": 1675621263117,
+            "name": "contact",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1675621263117,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_5de58a2fba3945beade04ee26f5d0f22",
+            "parentId": null,
+            "modified": 1675641631861,
+            "created": 1673536085139,
+            "name": "desafio_fullstack_backend",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_7bdc6ef91a614ce09dc5e731b6c62fb0",
+            "parentId": "fld_4a42637754df4b4f90f526b88cc93fa6",
+            "modified": 1675640813796,
+            "created": 1675621272445,
+            "url": "{{ _.base }}/client/contact",
+            "name": "create contact",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{  \n\t  \"name\": \"daniel\",\n\t  \"emailContact\": \"wdw@dffgmail.com\",\n\t  \"telephone\":9999339\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6ImM4MWU1MDI0LTQxNjYtNGQ2Mi05MjRhLThhN2M1NDQzOTAwYiIsImlhdCI6MTY3NTYzNzkyOSwiZXhwIjoxNjc1NzI0MzI5LCJzdWIiOiJjODFlNTAyNC00MTY2LTRkNjItOTI0YS04YTdjNTQ0MzkwMGIifQ.fXR1gXQDrY0aZT3B0KMRKi_sqH5mQrahScUvKuTMMVo",
+                "disabled": false
+            },
+            "metaSortKey": -1675621272445,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5d73c2337d754a7c8204dfda05f2fad3",
+            "parentId": "fld_e12830067f44405997bccf4430b662b9",
+            "modified": 1675640750884,
+            "created": 1675617242305,
+            "url": "{{ _.base }}/client/login",
+            "name": "login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t  \"email\": \"kenzinho@kenzie.com\",\n\t  \"password\": \"e124\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1675617816062.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_e12830067f44405997bccf4430b662b9",
+            "parentId": "wrk_5de58a2fba3945beade04ee26f5d0f22",
+            "modified": 1675621268284,
+            "created": 1675618389819,
+            "name": "clients",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1675618389820,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_861a3359999347d48ba4ef7f24ca563b",
+            "parentId": "fld_e12830067f44405997bccf4430b662b9",
+            "modified": 1675640759827,
+            "created": 1675366105090,
+            "url": "{{ _.base }}/client/b46a1374-5c62-4b73-9c6e-89e8d8488c61",
+            "name": "delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6ImI0NmExMzc0LTVjNjItNGI3My05YzZlLTg5ZThkODQ4OGM2MSIsImlhdCI6MTY3NTYzODUzOCwiZXhwIjoxNjc1NzI0OTM4LCJzdWIiOiJiNDZhMTM3NC01YzYyLTRiNzMtOWM2ZS04OWU4ZDg0ODhjNjEifQ.7Gu2YxswQH-bUAK8QFogq24uly_0ob3UvKkNE8CsPaw"
+            },
+            "metaSortKey": -1675617816012.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_41bbf21d536d4228bda62277ddda5bca",
+            "parentId": "fld_e12830067f44405997bccf4430b662b9",
+            "modified": 1675641297262,
+            "created": 1673536089641,
+            "url": "{{ _.base }}/client/",
+            "name": "create client",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": " {\n    \"name\": \"Kenzinho\",\n\t  \"email\": \"kenzinho@kenzie.com\",\n\t  \"telephone\":1234544,\n\t  \"password\": \"e124\"\n }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1675617815987.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ffbb375f1a3a415ebbb18955b858b403",
+            "parentId": "fld_e12830067f44405997bccf4430b662b9",
+            "modified": 1675640784194,
+            "created": 1675349183896,
+            "url": "{{ _.base }}/client/",
+            "name": "list client",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6ImU4OThjN2FlLWYxMzAtNDAzMi1hNzQ0LTFhOTMxMjBhYmU3MyIsImlhdCI6MTY3NTYzNzQwMiwiZXhwIjoxNjc1NzIzODAyLCJzdWIiOiJlODk4YzdhZS1mMTMwLTQwMzItYTc0NC0xYTkzMTIwYWJlNzMifQ.Frl0baknD8y9SsfwC-4qe8xCu8ZlU5eAvyXyYfLK83A"
+            },
+            "metaSortKey": -1675617815962.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_af0682c8ec93cff880fb343f350f72894e21ca79",
+            "parentId": "wrk_5de58a2fba3945beade04ee26f5d0f22",
+            "modified": 1675641569668,
+            "created": 1673536085147,
+            "name": "Base Environment",
+            "data": {
+                "base": "localhost:3000",
+                "no_movie_uuid": "{% uuid 'v4' %}"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "base",
+                    "no_movie_uuid"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1673536085147,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_af0682c8ec93cff880fb343f350f72894e21ca79",
+            "parentId": "wrk_5de58a2fba3945beade04ee26f5d0f22",
+            "modified": 1673536085164,
+            "created": 1673536085164,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_f06d5793c17e49f68c3afcc950bba9a3",
+            "parentId": "wrk_5de58a2fba3945beade04ee26f5d0f22",
+            "modified": 1673536085141,
+            "created": 1673536085141,
+            "fileName": "M4",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
