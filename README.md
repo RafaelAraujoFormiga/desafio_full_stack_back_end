@@ -27,5 +27,5 @@ docker compose up --build
 ````
 O comando pode variar com a versão do docker compose instalada em sua máquina
 
-***ATENÇÃO:*** a porta utilizada para rodar nosso docker é a `5431`.
+***ATENÇÃO:*** a porta utilizada para rodar nosso docker é a `5432`.
 Caso tenha algum problema com essa porta, basta alterá-la no docker-compose.yml. E a entrega já possui um workspace para facilitar a verificação das rotas.

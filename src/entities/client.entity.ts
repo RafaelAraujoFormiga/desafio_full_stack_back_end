@@ -17,7 +17,7 @@ class Client {
     isActive: boolean
 
     @Column()
-    telephone: number
+    telephone: string
 
     @Column({ length: 120, })
     @Exclude()

@@ -1,14 +1,14 @@
 export interface IClientRequest {
     name: string
     email: string
-    telephone: number
+    telephone: string
     password: string
 }
 export interface IClient {
     clientId: string
     name: string
     email: string
-    telephone: number
+    telephone: string
     isActive?: boolean
     createdAt: Date
     updatedAt: Date
@@ -20,6 +20,6 @@ export interface IClientLogin {
 export interface IClientUpdate {
     name?: string
     email?: string
-    telephone?: number
+    telephone?: string
     password?: string
 }

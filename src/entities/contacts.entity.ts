@@ -13,7 +13,7 @@ class Contacts {
     emailContact: string
 
     @Column()
-    telephone: number
+    telephone: string
 
     @CreateDateColumn()
     createdAt: Date
